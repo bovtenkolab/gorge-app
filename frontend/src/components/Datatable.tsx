@@ -1,8 +1,8 @@
 import React, { useState, useMemo } from "react";
-import rawData from "../data/sample.json";
+import rawData from "../data/links.json";
 
 type PortfolioItem = {
-  id: number;
+  id: string;
   name: string;
   link: string;
   comments: string[];
