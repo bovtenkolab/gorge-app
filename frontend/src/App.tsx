@@ -73,11 +73,9 @@ export default function App() {
   }
 
   return (
-    <div style={{ padding: 20 }}>
-      <h1>Link Manager</h1>
+    <div id="container">      
 
-      <button onClick={addNew}>Add</button>
-
+      <div id="divTable">
       <table border={1} cellPadding={8}>
         <thead>
           <tr>
@@ -148,6 +146,24 @@ export default function App() {
           ))}
         </tbody>
       </table>
+      </div>
+
+      <div id="header">
+
+        <div id="header-1">
+          <h1>Link Manager</h1>
+          <button onClick={addNew}>Add</button>
+        </div>
+
+        <div id="header-2">
+          <div>
+            <label>Name: </label>
+            <input id="txtName" type="text"/>
+          </div>
+        </div>
+
+      </div>
+
     </div>
   );
 }

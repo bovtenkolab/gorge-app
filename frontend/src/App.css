@@ -40,3 +40,16 @@
 .read-the-docs {
   color: #888;
 }
+
+html {
+  background-color: lightcoral;
+}
+
+#header {
+  height: 40% !important;
+  background-color: lightcoral;
+}
+
+#container {
+  background-color: black;
+}

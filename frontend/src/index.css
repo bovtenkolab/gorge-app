@@ -1,7 +1,5 @@
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -12,6 +10,13 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+html, body, #root, #container {
+  height: 100%;
+    width: 100%;
+
+}
+
 
 a {
   font-weight: 500;
@@ -24,10 +29,8 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
+  display: block;
   place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
 }
 
 h1 {
@@ -65,4 +68,27 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+#header {
+  background-color: goldenrod;
+  height: 30vh;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
+#container {
+  background-color: black;
+}
+
+#header-1 {
+  width: 40%;
+  display: inline-block; 
+}
+
+#header-2 {
+  width: 60%;
+  display: inline-block;
 }
